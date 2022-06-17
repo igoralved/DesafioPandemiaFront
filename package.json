@@ -1,0 +1,11 @@
+{
+  "name": "desafiopandemiafront",
+  "version": "1.0.0",
+  "description": "Only for workers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "igor",
+  "license": "ISC"
+}
