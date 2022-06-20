@@ -4,7 +4,7 @@ function alertaU(){
 }
 
 function alertaA(){
-    alert("Para os atendimentos");
+    window.location.href="./AtendimentoMenu.html";
 }
 
 function alertaE(){
