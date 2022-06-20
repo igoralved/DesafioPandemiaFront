@@ -2,7 +2,7 @@
 
 var testes = document.querySelector('[data-t]');
 
-function loadUnidadesDeSaude(result){
+function loadTestes(result){
     for(let t of result){
         const linhaNova = document.createElement('tr');
         
@@ -32,7 +32,7 @@ const http = new XMLHttpRequest();
 http.onreadystatechange = function() {
     if (http.readyState == XMLHttpRequest.DONE) {
         var result = JSON.parse(http.response);
-        loadUnidadesDeSaude(result);
+        loadTestes(result);
     }
 }
 

@@ -2,7 +2,7 @@
 
 var atendimentos = document.querySelector('[data-a]');
 
-function loadUnidadesDeSaude(result){
+function loadAtendimentos(result){
     for(let a of result){
         const linhaNova = document.createElement('tr');
         const relPand = a.relacionado_com_pandemia;
@@ -49,7 +49,7 @@ const http = new XMLHttpRequest();
 http.onreadystatechange = function() {
     if (http.readyState == XMLHttpRequest.DONE) {
         var result = JSON.parse(http.response);
-        loadUnidadesDeSaude(result);
+        loadAtendimentos(result);
     }
 }
 
