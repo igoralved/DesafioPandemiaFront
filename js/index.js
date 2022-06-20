@@ -8,11 +8,11 @@ function alertaA(){
 }
 
 function alertaE(){
-    alert("Para as etapas de atendimentos");
+    window.location.href="./EtapaMenu.html";
 }
 
 function alertaT(){
-    alert("Para os testes dos atendimentos");
+    window.location.href="./TesteMenu.html";
 }
 
 
