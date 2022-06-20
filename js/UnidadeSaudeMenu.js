@@ -10,6 +10,8 @@ function loadUnidadesDeSaude(result){
         <li>
             <a>ID: ${u.id}</a>
             <h1></h1>
+            <a>Nome: ${u.nome}</a>
+            <h1></h1>
             <a>Numero pacientes: ${u.numeroPacientes}</a>
             <h1></h1>
             <a>Data: ${u.data}</a>
