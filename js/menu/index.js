@@ -1,18 +1,18 @@
 
 function alertaU(){
-    window.location.href="./UnidadesSaudeMenu.html";
+    window.location.href="./escolheAcaoUnidade.html";
 }
 
 function alertaA(){
-    window.location.href="./AtendimentoMenu.html";
+    window.location.href="./escolheAcaoAtendimento.html";
 }
 
 function alertaE(){
-    window.location.href="./EtapaMenu.html";
+    window.location.href="./escolheAcaoEtapa.html";
 }
 
 function alertaT(){
-    window.location.href="./TesteMenu.html";
+    window.location.href="./escolheAcaoTeste.html";
 }
 
 
