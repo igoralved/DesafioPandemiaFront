@@ -6,6 +6,22 @@
 
 }
 
+.formulario{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixaTexto{
+    margin-bottom: 10px;
+}
+
+.sendButton{
+    margin-bottom: 10px;
+}
+
 .header{
     width: 100%;
     height: 100%;
