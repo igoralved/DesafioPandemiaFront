@@ -1,6 +1,5 @@
 
 var unidades = document.querySelector('[data-u]');
-
 function loadUnidadesDeSaude(result){
     for(let u of result){
         const linhaNova = document.createElement('tr');
@@ -15,12 +14,11 @@ function loadUnidadesDeSaude(result){
             <h1></h1>
             <a>Numero pacientes: ${u.numeroPacientes}</a>
             <h1></h1>
-            <a>Data: ${u.data}</a>
         </li>
         <h1></h1>
     </ul>
     </td>
-        `
+        `;
         linhaNova.innerHTML = conteudo;
         unidades.appendChild(linhaNova);
     }
@@ -35,6 +33,5 @@ http.onreadystatechange = function() {
     }
 }
 
-http.open("GET","http://localhost:8080/unidades/todas");
+http.open("GET","http://localhost:8080/unidades/todas?nome=QUALQUER");
 http.send();
-
