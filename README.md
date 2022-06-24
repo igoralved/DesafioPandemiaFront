@@ -17,6 +17,7 @@
 2.3.Tela que lista tudo:
 
   É possível ver todos os itens listadas com alguns de seus atributos (na de atendimentos são mostrados só os relacionados com pandemia). Cada entidade tem seus atributos.
+  
 2.4.Tela para cadastrar um novo elemento:
 
   Cada entidade tem uma tela com um formulário para cadastrar um novo elemento na lista.
