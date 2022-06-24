@@ -20,6 +20,9 @@
 3.Atributos das entidades:
 
  *Unidades de saúde tem exibido na tela seu ID, nome e número de pacientes;
+ 
  *Atendimentos tem ID, tempo em horas e se é ou não relacionado com pandemia e sem possibilidade de contágio;
+ 
  *Etapas: tem ID, número e descrição;
+ 
  *Testes: tem ID, número e resultado;
