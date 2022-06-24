@@ -9,12 +9,16 @@
 2.1.Menu principal:
 
   É possível escolher a entidade que quer fazer alguma requisição.
+  
 2.2.Tela de escolha de requisição da entidade:
+
   Para escolher se quer listar todos os registros ou cadastrar um novo.
   
 2.3.Tela que lista tudo:
+
   É possível ver todos os itens listadas com alguns de seus atributos (na de atendimentos são mostrados só os relacionados com pandemia). Cada entidade tem seus atributos.
 2.4.Tela para cadastrar um novo elemento:
+
   Cada entidade tem uma tela com um formulário para cadastrar um novo elemento na lista.
   
 3.Atributos das entidades:
