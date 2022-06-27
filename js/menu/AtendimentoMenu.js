@@ -2,6 +2,7 @@
 
 var atendimentos = document.querySelector('[data-a]');
 
+
 function loadAtendimentos(result){
     for(let a of result){
         const linhaNova = document.createElement('tr');
@@ -27,6 +28,8 @@ function loadAtendimentos(result){
             <a>ID: ${a.id}</a>
             <h1></h1>
             <a>Descricao: ${a.descricao}</a>
+            <h1></h1>
+            <a>Data: ${a.data}</a>
             <h1></h1>
             <a>Relacionado com pandemia: ${relSim}</a>
             <h1></h1>
