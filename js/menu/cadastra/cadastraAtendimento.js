@@ -1,4 +1,15 @@
 
+function padTo2Digits(num) {
+    return num.toString().padStart(2, '0');
+  }
+  
+function formatDate(date) {
+    return [
+        date.getFullYear(),
+      padTo2Digits(date.getMonth() + 1),
+      padTo2Digits(date.getDate()),
+    ].join('-');
+}
 
 function verificaDataValida(dia, mes,ano){
     if(ano % 4 == 0){
@@ -56,7 +67,7 @@ function(){
     console.log(r);
     console.log(s);
     if(descricao.length > 0 && tempo > 0){
-        const data = {descricao: descricao,data:"2022-01-01",tempoAtendimento: tempo,relacionado_com_pandemia: r,sem_possibilidade_contagio: s}
+        const data = {descricao: descricao,data: formatDate(new Date()).toString(),tempoAtendimento: tempo,relacionado_com_pandemia: r,sem_possibilidade_contagio: s}
         const rawResponse = fetch("http://localhost:8080/atendimentos/cadastrar",{
             headers:{
                 'Content-Type': 'application/json',
