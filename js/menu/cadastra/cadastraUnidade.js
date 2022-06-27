@@ -1,4 +1,15 @@
 
+function padTo2Digits(num) {
+    return num.toString().padStart(2, '0');
+  }
+  
+function formatDate(date) {
+    return [
+        date.getFullYear(),
+      padTo2Digits(date.getMonth() + 1),
+      padTo2Digits(date.getDate()),
+    ].join('-');
+}
 
 var botaoSend = document.querySelector(".sendButton");
 
@@ -9,7 +20,7 @@ function(){
     const nroP = entradas[1].value;
     if(nroP > 0 && nome.length > 0){
 
-        const data = {nome: nome,numeroPacientes: nroP,data:"2022-01-01"};
+        const data = {nome: nome,numeroPacientes: nroP,data: formatDate(new Date()).toString()};
         const rawResponse = fetch("http://localhost:8080/unidades/cadastrar",{
             headers:{
                 'Content-Type': 'application/json',
