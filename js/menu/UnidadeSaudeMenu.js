@@ -16,6 +16,8 @@ function loadUnidadesDeSaude(result){
             <h1></h1>
             <a>Numero pacientes: ${u.numeroPacientes}</a>
             <h1></h1>
+            <button class="verAtendimentos" id=${u.id}>Ver atendimentos</nutton>
+            <h1></h1>
         </li>
         <h1></h1>
     </ul>
@@ -32,6 +34,18 @@ http.onreadystatechange = function() {
     if (http.readyState == XMLHttpRequest.DONE) {
         var result = JSON.parse(http.response);
         loadUnidadesDeSaude(result);
+        const botoesVerAtendimentos = unidades.getElementsByClassName("verAtendimentos");
+
+        for(let b of botoesVerAtendimentos){
+            b.addEventListener(
+                "click",
+                function(){
+                    localStorage.setItem("idU",b.id);
+                    window.location.href="./AtendimentosUnidade.html";
+                }
+            );
+        }
+
     }
 }
 
