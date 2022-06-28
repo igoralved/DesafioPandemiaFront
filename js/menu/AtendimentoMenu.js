@@ -37,6 +37,10 @@ function loadAtendimentos(result){
             <h1></h1>
             <a>Tempo de atendimento: ${a.tempoAtendimento}</a>
             <h1></h1>
+            <button class="verEtapas" id=${a.id}>Ver etapas</button>
+            <h1></h1>
+            <button class="verTestes" id=${a.id}>Ver testes</button>
+            <h1></h1>
         </li>
         <h1></h1>
     </ul>
@@ -53,9 +57,31 @@ http.onreadystatechange = function() {
     if (http.readyState == XMLHttpRequest.DONE) {
         var result = JSON.parse(http.response);
         loadAtendimentos(result);
+        const botoesVerEtapas = atendimentos.getElementsByClassName("verEtapas");
+
+        for(let b of botoesVerEtapas){
+            b.addEventListener(
+                "click",
+                function(){
+                    localStorage.setItem("idA",b.id);
+                    window.location.href="./EtapasAtendimento.html";
+                }
+            );
+        }
+
+        const botoesVerTestes = atendimentos.getElementsByClassName("verTestes");
+
+        for(let b of botoesVerTestes){
+            b.addEventListener(
+                "click",
+                function(){
+                    localStorage.setItem("idA",b.id);
+                    window.location.href="./TestesAtendimento.html";
+                }
+            );
+        }
     }
 }
 
 http.open("GET","http://localhost:8080/atendimentos/listar");
 http.send();
-
