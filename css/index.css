@@ -144,3 +144,12 @@
     font-size: 25px;
     text-align: center;
 }
+
+@media screen and (max-width: 446px) {
+
+    .mainMenu{
+        display: flex;
+        flex-direction: column;
+    }    
+
+}
